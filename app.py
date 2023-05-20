@@ -1,8 +1,8 @@
 import streamlit as st
-from prediction import predict
 import numpy as np
 import pandas as pd
 import joblib
+from prediction import predict
 
 model= joblib.load('final_model_1.sav')
 
