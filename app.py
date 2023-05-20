@@ -7,22 +7,22 @@ model= joblib.load('final_model_1.sav')
 
 st.title('How your restaurant will success in Bangalore?')
 
-online_order= st.selectbox('online order option in the resturant?',('Yes','No'))
-book_table= st.selectbox('Book table option in th resturant?',('Yes','No'))
-votes= st.number_input('how many votes the resturant have?',0)
-average_cost= st.number_input('how much on average you want a two persons to spend?',0)
+online_order= st.selectbox('online order option in the resturant?',['Yes','No'])
+book_table= st.selectbox('Book table option in th resturant?',['Yes','No'])
+votes= st.slider('how many votes the resturant have?', min_value=0, max_value=16832, value=0, step=5)
+average_cost= st.number_input('how much on average you want a two persons to spend?',min_value=50, max_value=6000, value=0, step=50)
 meal_type= st.selectbox('what type of the resturant',('Buffet','Cafes','Delivery','Desserts',
-                                                 'Bars','Drinks & nightlife','Dine_out'))
+                                                      'Bars','Drinks & nightlife','Dine_out'))
 neighborhood= st.selectbox('Where you will start your restaurant?',
-('Banashankari', 'Bannerghatta Road', 'Basavanagudi', 'Bellandur',
-       'Brigade Road', 'Brookefield', 'BTM', 'Church Street',
-       'Electronic City', 'Frazer Town', 'HSR', 'Indiranagar',
-       'Jayanagar', 'JP Nagar', 'Kalyan Nagar', 'Kammanahalli',
-       'Koramangala 4th Block', 'Koramangala 5th Block',
-       'Koramangala 6th Block', 'Koramangala 7th Block', 'Lavelle Road',
-       'Malleshwaram', 'Marathahalli', 'MG Road', 'New BEL Road',
-       'Old Airport Road', 'Rajajinagar', 'Residency Road',
-       'Sarjapur Road', 'Whitefield'))
+                           ['Banashankari', 'Bannerghatta Road', 'Basavanagudi', 'Bellandur',
+                            'Brigade Road', 'Brookefield', 'BTM', 'Church Street',
+                            'Electronic City', 'Frazer Town', 'HSR', 'Indiranagar',
+                            'Jayanagar', 'JP Nagar', 'Kalyan Nagar', 'Kammanahalli',
+                            'Koramangala 4th Block', 'Koramangala 5th Block',
+                            'Koramangala 6th Block', 'Koramangala 7th Block', 'Lavelle Road',
+                            'Malleshwaram', 'Marathahalli', 'MG Road', 'New BEL Road',
+                            'Old Airport Road', 'Rajajinagar', 'Residency Road',
+                            'Sarjapur Road', 'Whitefield'])
 rest_type_count= st.select_slider('how many area the resturant serveing',[1,2])
 cuisines_total= st.select_slider('how many cuisines the resturant serveing',[1,2,3,4,5,6,7,8])
 
