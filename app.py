@@ -1,10 +1,10 @@
 import streamlit as st
-
+from prediction import predict
 import numpy as np
 import pandas as pd
 import joblib
 
-model= joblib.load('final_model.joblip')
+model= joblib.load('final_model_1.sav')
 
 st.title('How your restaurant will success in Bangalore?')
 
@@ -30,7 +30,6 @@ cuisines_total= st.select_slider('how many cuisines the resturant serveing',[1,2
 
 columns= ['online_order', 'book_table', 'votes', 'average_cost', 'meal_type',
           'neighborhood', 'rest_type_count', 'cuisines_total']
-
 
 
 def predict():
@@ -59,7 +58,7 @@ div.stButton > button:hover {
     }
 </style>""", unsafe_allow_html=True)
 
-st.button('Predict', on_click=predict)
+st.button('Predict Success Rate', on_click=predict)
 
 
 
