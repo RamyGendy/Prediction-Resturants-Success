@@ -10,7 +10,7 @@ columns= ['online_order', 'book_table', 'votes', 'average_cost', 'meal_type','ne
 st.markdown( '''
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://img.freepik.com/free-vector/sketches-arabic-food-pattern_23-2147543047.jpg");
+background-image: url("https://png.pngtree.com/background/20210709/original/pngtree-restaurant-price-list-background-material-picture-image_866271.jpg");
 background-size: cover;
 }
 </style>''', unsafe_allow_html=True)
