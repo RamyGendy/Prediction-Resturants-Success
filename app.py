@@ -59,4 +59,12 @@ div.stButton > button:hover {
     }
 </style>""", unsafe_allow_html=True)
 
-st.button('Predict Success Rate', on_click=predict)
+if st.button('Predict Success Rate'):
+    col= np.array([online_order, book_table, votes, average_cost, meal_type, neighborhood, rest_type_count, cuisines_total])
+    data= pd.DataFrame([col], columns=columns)
+    prediction= model.predict(data)[0]
+
+    if prediction == 1:
+        st.success('High Success Rate :thumbsup:')
+    else:
+        st.error('Low Success Rate :thumbsdown:')
