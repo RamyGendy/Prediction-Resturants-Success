@@ -7,6 +7,18 @@ model= joblib.load('final_model_1.sav')
 
 columns= ['online_order', 'book_table', 'votes', 'average_cost', 'meal_type','neighborhood', 'rest_type_count', 'cuisines_total']
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://img.freepik.com/free-vector/sketches-arabic-food-pattern_23-2147543047.jpg?w=740&t=st=1684645099~exp=1684645699~hmac=84259cb8e143ed9fe3b76923f73982414bea562ec93e169a7b453f1a55ce087c");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
 st.title('How your restaurant will success in Bangalore? :convenience_store:')
 
 online_order= st.selectbox('online order option in the resturant?',['Yes', 'No'])
