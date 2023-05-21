@@ -40,25 +40,14 @@ def predict():
     if prediction == 1:
         st.success('High Success Rate :thumbsup:')
     else:
-        st.error('Low Success Rate:thumbsdown:')
-
-
-
-
-
-m = st.markdown("""
-<style>
-div.stButton > button:first-child {
-    background-color: #0099ff;
-    color:#ffffff;
-}
-div.stButton > button:hover {
-    background-color: #00ff00;
-    color:#ff0000;
-    }
-</style>""", unsafe_allow_html=True)
+        st.write('Low Success Rate:thumbsdown:')
 
 st.button('Predict Success Rate', on_click=predict)
+
+
+
+
+
 
 
 
