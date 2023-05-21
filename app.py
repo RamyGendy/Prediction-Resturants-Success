@@ -12,6 +12,9 @@ st.markdown( '''
 [data-testid="stAppViewContainer"] {
 background-image: url("https://wallpapercave.com/wp/wp10509755.jpg");
 background-size: cover;
+[data-testid="stHeader"] {
+background: rgba(0,0,0,0);
+}
 }
 </style>''', unsafe_allow_html=True)
 
