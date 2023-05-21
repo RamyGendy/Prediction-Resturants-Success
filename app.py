@@ -7,17 +7,13 @@ model= joblib.load('final_model_1.sav')
 
 columns= ['online_order', 'book_table', 'votes', 'average_cost', 'meal_type','neighborhood', 'rest_type_count', 'cuisines_total']
 
-page_bg_img = '''
+st.markdown( '''
 <style>
 body {
 background-image: url("https://img.freepik.com/free-vector/sketches-arabic-food-pattern_23-2147543047.jpg");
 background-size: cover;
 }
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
+</style>''', unsafe_allow_html=True)
 
 st.title('How your restaurant will success in Bangalore? :convenience_store:')
 
