@@ -9,7 +9,7 @@ columns= ['online_order', 'book_table', 'votes', 'average_cost', 'meal_type','ne
 
 st.markdown( '''
 <style>
-body {
+[data-testid="stAppViewContainer"] {
 background-image: url("https://img.freepik.com/free-vector/sketches-arabic-food-pattern_23-2147543047.jpg");
 background-size: cover;
 }
