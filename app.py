@@ -7,17 +7,7 @@ model= joblib.load('final_model_1.sav')
 
 columns= ['online_order', 'book_table', 'votes', 'average_cost', 'meal_type','neighborhood', 'rest_type_count', 'cuisines_total']
 
-def predict():
-    col= np.array([online_order, book_table, votes, average_cost, meal_type, neighborhood, rest_type_count, cuisines_total])
-    data= pd.DataFrame([col], columns=columns)
-    prediction= model.predict(data)[0]
-
-    if prediction == 1:
-        st.success('High Success Rate :thumbsup:')
-    else:
-        st.error('Low Success Rate :thumbsdown:')
-
-st.title('How your restaurant will success in Bangalore?')
+st.title('How your restaurant will success in Bangalore? :convenience_store:')
 
 online_order= st.selectbox('online order option in the resturant?',['Yes', 'No'])
 
@@ -50,7 +40,7 @@ cuisines_total= st.select_slider('how many cuisines the resturant serveing',[3, 
 m = st.markdown("""
 <style>
 div.stButton > button:first-child {
-    background-color: #0099ff;
+    background-color: #00FF00;
     color:#ffffff;
 }
 div.stButton > button:hover {
