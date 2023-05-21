@@ -51,7 +51,7 @@ cuisines_total= st.select_slider('how many cuisines the resturant serveing',[3, 
 m = st.markdown("""
 <style>
 div.stButton > button:first-child {
-    background-color: #00FF00;
+    background-color: #d17f62;
     color:#ffffff;
 }
 div.stButton > button:hover {
