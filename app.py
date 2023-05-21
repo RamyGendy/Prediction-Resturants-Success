@@ -15,7 +15,7 @@ def predict():
     if prediction == 1:
         st.success('High Success Rate :thumbsup:')
     else:
-        st.write('Low Success Rate:thumbsdown:')
+        st.error('Low Success Rate :thumbsdown:')
 
 st.title('How your restaurant will success in Bangalore?')
 
@@ -54,7 +54,7 @@ div.stButton > button:first-child {
     color:#ffffff;
 }
 div.stButton > button:hover {
-    background-color: #00ff00;
+    background-color: #484752;
     color:#ff0000;
     }
 </style>""", unsafe_allow_html=True)
