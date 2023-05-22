@@ -20,9 +20,9 @@ background: rgba(0,0,0,0);
 
 st.title('How your restaurant will success in Bangalore? :convenience_store:')
 
-online_order= st.selectbox('online order option in the resturant?',['Yes', 'No'])
+online_order= st.radio("Do you offer online ordering option in the resturant?",['Yes', 'No'])
 
-book_table= st.selectbox('Book table option in th resturant?',['Yes', 'No'])
+book_table= st.radio("Do you offer Booking tables option in th resturant?",['Yes', 'No'])
 
 votes= st.slider('how many votes the resturant have?',
                  min_value=0, max_value=16832, value=0, step=50)
@@ -46,7 +46,7 @@ neighborhood= st.selectbox('Where you will start your restaurant?',
 
 rest_type_count= st.select_slider('how many area the resturant serveing',[1, 2])
 
-cuisines_total= st.select_slider('how many cuisines the resturant serveing',[3, 2, 1, 4, 5, 8, 7, 6])
+cuisines_total= st.select_slider('how many cuisines the resturant serveing',[1, 2, 3, 4, 5, 6, 7, 8])
 
 m = st.markdown("""
 <style>
